@@ -1,0 +1,146 @@
+
+body{
+    font-family: 'Roboto';
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; 
+    border: 20px solid fuchsia;
+    border-style: double;
+    color: white;
+    font-size: 150%
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 40%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container-text {
+    font-size: 300%;
+    text-align: center;
+}
+
+.container img {
+    width: 250px;
+    border: 20px solid fuchsia;
+    border-style: double;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 150%;
+    color: white;
+}
+
+.about-me-side{
+    width: 26.5%;
+    text-align: center;
+}
+
+.about-me-text{
+    border: 20px solid fuchsia;
+    border-style: double;
+    width: 75%;
+    padding: 40px;
+    text-align: center;
+}
+
+.work{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 150%;
+    color: white;
+}
+
+.work-side{
+    width: 25%;
+    text-align: center;
+}
+
+.work-text{
+    border: 20px solid fuchsia;
+    border-style: double;
+    width: 77%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+} 
+
+.work-text img{
+    width: 100%;
+}
+
+.work-text h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 20px solid fuchsia;
+    border-style: double;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 150%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 125%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container,
+    .about-me,
+    .work,
+    footer,
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
